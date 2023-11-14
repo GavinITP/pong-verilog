@@ -218,7 +218,7 @@ module pong_graph(
                 (y_pad_t <= y_ball_b) && (y_ball_t <= y_pad_b)) begin
                     x_delta_next = BALL_VELOCITY_NEG;
                     end
-        else if((X1_PAD_L <= x_ball_r) && (x_ball_r <= X1_PAD_R) &&
+        else if((X1_PAD_L <= x_ball_l) && (x_ball_l <= X1_PAD_R) &&
                 (y1_pad_t <= y_ball_b) && (y_ball_t <= y1_pad_b)) begin
                     x_delta_next = BALL_VELOCITY_POS;      
         end
